@@ -354,24 +354,6 @@ aside {
 
 /*== Hero Area ==*/
 
-  .mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row-wrap;
-  }
-
-  .mission-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-
-  .mission-content p {
-    width: 45%;
-  }
-
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -446,6 +428,50 @@ aside {
   }
 
   footer .copyright {
+    width: 100%;
+  }
+
+  /*== About page ==*/
+
+  .mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-wrap;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*==FAQ Page==*/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
     width: 100%;
   }
 }
