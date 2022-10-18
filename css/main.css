@@ -231,6 +231,50 @@ aside {
   margin: 20px 0;
 }
 
+/*== Mobile About ==*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section p {
+  margin: 0;
+}
+
+/*== Mobile FAQ==*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -328,7 +372,7 @@ aside {
     margin: 100px 0;
   }
 
-  /*== Header ==*/
+  /*== Tablet Header ==*/
 
   header {
     justify-content: space-around;
@@ -349,68 +393,47 @@ aside {
   }
 
   .header-divider {
-  display: none;
-}
+    display: none;
+  }
 
-/*== Hero Area ==*/
+/*==Tablet Hero Area ==*/
 
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
     flex-flow: nowrap;
-}
-
-  /*== Features ==*/
-
-  .features {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
   }
 
-  .features h2 {
-    margin-bottom: 60px;
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
   }
 
-  .features .features-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
+  /*==Tablet Features ==*/
 
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    flex-basis: 50%;
   }
 
-  .features p {
-    margin: 0;
+  .features .features-item-description {
+    width: 62%
   }
 
   .reviews article {
     display: flex;
-    justify-content: center;
-  }
-
-/*== Contact ==*/
-
-  .contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-  .contact-content {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
-/*== Footer ==*/
+  .reviews article div {
+    width: 49%;
+  }
+
+/*==Tablet Footer ==*/
 
   footer .content-wrapper {
     width: 65%;
@@ -431,14 +454,7 @@ aside {
     width: 100%;
   }
 
-  /*== About page ==*/
-
-  .mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row-wrap;
-  }
+  /*==Tablet About page ==*/
 
   .mission-content {
     display: flex;
@@ -461,7 +477,11 @@ aside {
     align-items: flex-start;
   }
 
-  /*==FAQ Page==*/
+  /*==Tablet FAQ Page==*/
+
+  header {
+    padding: 15px 0;
+  }
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -478,6 +498,50 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /*== Desktop Style Here==*/
+  /*== Homepage==*/
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*==Desktop About==*/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /*==FAQ==*/
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 /* ==========================================================================
