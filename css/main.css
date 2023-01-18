@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -255,7 +257,6 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
 }
 
 footer .social-icons p {
@@ -665,6 +666,11 @@ h3 {
 
   footer .copyright {
     width: 100%;
+    padding-top: 30px;
+  }
+
+  footer .social-icons {
+    width: 200px;
   }
 
   /*==Tablet About page ==*/
@@ -776,6 +782,10 @@ h3 {
 
   footer h4 {
     font-size: 1.875em;
+  }
+
+  footer .social-icons {
+    width: 200px;
   }
 
   /*==Desktop About==*/
