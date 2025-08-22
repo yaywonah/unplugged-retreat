@@ -17,16 +17,6 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -37,10 +27,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -49,12 +35,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -65,19 +45,11 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
   resize: vertical;
@@ -438,23 +410,10 @@ aside {
    Helper classes
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
-
 .hidden,
 [hidden] {
   display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .sr-only {
   border: 0;
@@ -469,12 +428,6 @@ aside {
   /* 1 */
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -486,25 +439,9 @@ aside {
   width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
 .clearfix::before,
 .clearfix::after {
@@ -515,12 +452,6 @@ aside {
 .clearfix::after {
   clear: both;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 768px) {
   /*== Tablet Style Here==*/
@@ -848,10 +779,6 @@ h3 {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -867,10 +794,6 @@ h3 {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
   thead {
     display: table-header-group;
   }
